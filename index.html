@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="title" content="jQuery UI Datetime" />
+    <meta name="description" content="jQuery UI Datetime Plugin" />
+    <meta name="keywords" content="jquery, jqueryui, datepicker, jquery datepicker, datetime, timepicker" />
+    <meta name="language" content="en" />
+    <title>jQuery UI Datetime</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery.ui.datetime.src.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://code.jquery.com/ui/1.12.0/themes/flick/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="jquery.ui.datetime.css" />
+
+    <script type="text/javascript">
+      jQuery(document).ready(function($){
+        $.ajaxSetup({ cache: false });
+        $("#menu").find('a').click(function(e){
+          $("#demo").load($(this).attr('href'));
+          e.preventDefault();
+        });
+        $("#default").click();
+      });
+    </script>
+
+    <style type="text/css">
+      body { font-family:Calibri,Arial,sans-serif; }
+    </style>
+
+  </head>
+  <body>
+
+    <h1>jQuery UI Datetime</h1>
+
+    <div id="menu" style="display:block;float:left;width:200px;">
+      <ul style="list-style:none;margin:0;padding:0;">
+        <li><a href="examples/default.html" id="default">Default Functionality</a></li>
+        <li><a href="examples/format.html">Format Date</a></li>
+        <li><a href="examples/restrict.html">Restrict Date Range</a></li>
+        <li><a href="examples/alt.html">Populate Alternate Field</a></li>
+        <li><a href="examples/inline.html">Display Inline</a></li>
+        <li><a href="examples/week.html">Show Week of the Year</a></li>
+        <li><a href="examples/months.html">Display Multiple Months</a></li>
+        <li><a href="examples/chain.html">Chained Widgets</a></li>
+        <li><a href="examples/range.html">Range Selection</a></li>
+        <li><a href="examples/only.html">Date or Time Seperately</a></li>
+        <li><a href="examples/states.html">Set Multiple States</a></li>
+      </ul>
+    </div>
+
+    <div id="demo" style="display:block;float:left;width:600px;height:400px;"></div>
+
+  </body>
+</html>

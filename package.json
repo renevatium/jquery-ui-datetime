@@ -1,0 +1,26 @@
+{
+  "name": "jquery-ui-datetime",
+  "version": "0.1.0",
+  "description": "JQuery UI datepicker with time selection",
+  "main": "jquery.ui.datetime.src.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renevatium/jquery-ui-datetime.git"
+  },
+  "keywords": [
+    "jquery",
+    "jquery ui",
+    "datepicker",
+    "datetime"
+  ],
+  "author": "Renevatium",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renevatium/jquery-ui-datetime/issues"
+  },
+  "homepage": "https://github.com/renevatium/jquery-ui-datetime#readme"
+}
